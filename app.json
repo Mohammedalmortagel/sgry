@@ -7,9 +7,9 @@
         "telegram bot",
         "banall"
     ],
-    "website": "https://t.me/RomeoBot_op",
-    "repository": "https://github.com/RJ-5/RomeosessionHbot",
-    "success_url": "https://t.me/RomeoBot_op",
+    "website": "https://t.me/AlmortagelTech",
+    "repository": "https://github.com/Almortagel12/sgry",
+    "success_url": "https://t.me/AlmortagelTech",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
